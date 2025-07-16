@@ -1,0 +1,54 @@
+/*make the background nice*/
+body{
+    background: linear-gradient(to right, #ffc0cb, #ff69b4);
+    height: 100vh;
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+/* The card-style layout */
+.birthday-card {
+    background-color: rgb(234, 155, 168)
+    padding 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 500px;
+    animation: popIn 1.2s ease-in-out;
+}
+
+/* The title */
+.birthday-card h1 {
+    color: #ff4081;
+    font-size: 2.2em;
+    margin-bottom: 15px;
+}
+
+/* The message */
+.birthday-gift p {
+    font-size: 1.3em;
+    color: #333;
+}
+
+/*Gift Style*/
+.birthday-gift {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+/* animation */
+@keyframes float {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
